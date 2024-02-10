@@ -1,0 +1,77 @@
+:root {
+    --primary : #626D8C;
+    --secondary : #0B0C0C;
+}
+
+
+* {
+    padding: 0px 10px 0px 10px;
+}
+
+#about { 
+    height: 100vh;
+    background-color: blue;
+    display: flex;
+}
+
+.about .col {
+    margin: 5px;
+    background-color: red;
+    display: flex; /* Membuat .col menjadi flex container */
+    justify-content: center; /* Memposisikan isi kolom ke tengah secara horizontal */
+    align-items: center; /* Memposisikan isi kolom ke tengah secara vertikal */
+}
+
+.about .col:nth-child(1) {
+    flex: 10; /* Kolom pertama dua kali lebih lebar */
+}
+
+.about .col:nth-child(2) {
+    flex: 7; /* Kolom kedua */
+}
+
+.about .col:nth-child(3) {
+    flex: 1; /* Kolom ketiga */
+}
+
+.about .col h1 {
+    font-size: 60px;
+    color: var(--secondary);
+    margin: 0;
+}
+
+.highlight {
+    color: var(--primary);
+}
+
+.about .col .button {
+    padding-top: 10px;
+}
+
+.about .col a.primary{
+    text-decoration: none;
+    color: #fff;
+}
+
+.about .col .primary {
+    padding: 10px 20px;
+    background-color: var(--primary);
+    border-radius: 5px;
+}
+
+.about .col a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.about .col:nth-child(2) .row {
+    width: 200px;
+    height: 200px;
+    background-color: var(--primary);
+    border: 4px solid black;
+    box-sizing: border-box;
+}
+
+
+
