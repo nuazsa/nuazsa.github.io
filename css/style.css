@@ -21,6 +21,43 @@ p {
 
 
 
+
+
+/* NAVBAR */
+#navbar {
+    height: 10vh;
+    margin-left: 15px;
+    margin-right: 49px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: hotpink;    */
+} 
+
+#navbar h2 {
+    color: var(--primary);
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    color: var(--paragraph);
+}
+
+#navbar a {
+    padding: 10px 20px;
+    border: 2px solid var(--primary);
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--paragraph);
+}
+
+
+
+
 /* SECTION ABOUT */
 #about { 
     height: 100vh;
