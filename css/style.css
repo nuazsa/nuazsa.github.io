@@ -1,41 +1,64 @@
 :root {
     --primary : #626D8C;
+    --primary-hover : #4e566d; 
     --secondary : #0B0C0C;
+    --paragraph : #323433;
 }
-
 
 * {
     padding: 0px 10px 0px 10px;
 }
 
+body {
+    font-family: "Inter", sans-serif;
+}
+
+p {
+    color: var(--paragraph);
+}
+
+
+
+/* SECTION ABOUT */
 #about { 
     height: 100vh;
-    background-color: blue;
     display: flex;
+    /* background-color: blue; */
 }
 
 .about .col {
     margin: 5px;
-    background-color: red;
-    display: flex; /* Membuat .col menjadi flex container */
-    justify-content: center; /* Memposisikan isi kolom ke tengah secara horizontal */
-    align-items: center; /* Memposisikan isi kolom ke tengah secara vertikal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: red; */
 }
 
 .about .col:nth-child(1) {
-    flex: 10; /* Kolom pertama dua kali lebih lebar */
+    flex: 15;
 }
 
 .about .col:nth-child(2) {
-    flex: 7; /* Kolom kedua */
+    flex: 10;
 }
 
 .about .col:nth-child(3) {
-    flex: 1; /* Kolom ketiga */
+    flex: 3;
+}
+
+.ellipse {
+    width: 90px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .about .col h1 {
     font-size: 60px;
+    padding: 10px 0;
     color: var(--secondary);
     margin: 0;
 }
@@ -44,8 +67,19 @@
     color: var(--primary);
 }
 
-.about .col .button {
-    padding-top: 10px;
+.about .button {
+    padding-top: 20px;
+}
+
+.about .col .primary {
+    padding: 10px 30px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    transition: padding 0.3s ease;
+}
+
+.about .col .primary:hover {
+    background-color: var(--primary-hover);
 }
 
 .about .col a.primary{
@@ -53,25 +87,22 @@
     color: #fff;
 }
 
-.about .col .primary {
-    padding: 10px 20px;
-    background-color: var(--primary);
-    border-radius: 5px;
-}
-
 .about .col a{
     text-decoration: none;
-    color: black;
+    color:var(--paragraph);
+    font-size: 14px;
 }
-
 
 .about .col:nth-child(2) .row {
-    width: 200px;
-    height: 200px;
+    width: 380px;
+    height: 380px;
+    border-radius: 2000px 100px 0 0;
     background-color: var(--primary);
-    border: 4px solid black;
-    box-sizing: border-box;
 }
 
 
+.rotate-icon {
+    transform: rotate(320deg); /* Memutar ikon 90 derajat */
+    color: var(--paragraph );
+}
 
