@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Jelajahi portofolio saya yang menampilkan berbagai proyek pengembangan perangkat lunak yang telah saya kerjakan. lihatlah contoh kerja saya dan kemampuan teknis saya dalam membangun solusi perangkat lunak yang inovatif dan efektif.">
+    <meta name="description"
+        content="Jelajahi portofolio saya yang menampilkan berbagai proyek pengembangan perangkat lunak yang telah saya kerjakan. lihatlah contoh kerja saya dan kemampuan teknis saya dalam membangun solusi perangkat lunak yang inovatif dan efektif.">
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -15,7 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
     <!-- ICON -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Nur Azis Saputra</title>
 </head>
@@ -26,14 +29,17 @@
         <div class="col">
             <h2>Nur Azis Saputra</h2>
             <ul>
-                <li>Experience</li>
-                <li>Education</li>
-                <li>Skill</li>
-                <li>Certified</li>
-                <li>Portofolio</li>
+                <li><a href="">Experience</a></li>
+                <li><a href="">Education</a></li>
+                <li><a href="">Skill</a></li>
+                <li><a href="">Certified</a></li>
+                <li><a href="">Portofolio</a></li>
             </ul>
             <i class="fa-regular fa-moon" id="icon"></i>
-            <a href="">Download CV</a>
+            <i class="fas fa-bars icon" id="toggle"></i> <!-- Tambahkan ikon toggle -->
+            <div class="button">
+                <a href="">Download CV</a>
+            </div>
         </div>
     </div>
 
@@ -45,7 +51,8 @@
                     <p>Welcome</p>
                 </div>
                 <h1>I Have<span class="highlight">Software Developer</span>Experience</h1>
-                <p>I'm Azis, I have strong skills in Software Developer and aim to be a dedicated professional developer. I've helped three businesses grow with my technology.</p>
+                <p>I'm Azis, I have strong skills in Software Developer and aim to be a dedicated professional
+                    developer. I've helped three businesses grow with my technology.</p>
                 <div class="button">
                     <a class="primary" href="">Hire Me</a>
                     <a href="">View Portofolio <i class="fa-solid fa-arrow-right rotate-icon"></i></a>
@@ -54,7 +61,7 @@
         </div>
         <div class="col">
             <div class="row">
-                <img src="asset/image.png" alt="nurazissaputra" width="380px">
+                <img src="asset/image.png" alt="nurazissaputra">
             </div>
         </div>
     </div>
@@ -70,7 +77,16 @@
             } else {
                 icon.className = "fa-regular fa-moon";
             }
-        }        
+        }
+
+        // Ambil elemen toggle dan ul
+        const toggle = document.getElementById('toggle');
+        const ul = document.querySelector('.navbar ul');
+
+        // Tambahkan event listener untuk toggle
+        toggle.addEventListener('click', function () {
+            ul.classList.toggle('active'); // Tambahkan atau hapus kelas active saat toggle di-klik
+        });
     </script>
 </body>
 
