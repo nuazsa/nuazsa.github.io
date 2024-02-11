@@ -28,18 +28,21 @@
     <div class="navbar" id="navbar">
         <div class="col">
             <h2>Nur Azis Saputra</h2>
-            <ul>
+            <i class="fa-regular fa-moon" id="icon"></i>
+            <i class="fas fa-bars icon" id="navbar-toggle"></i> <!-- Tambahkan ikon toggle -->
+            <ul id="menu-list" class="hidden">
                 <li><a href="">Experience</a></li>
                 <li><a href="">Education</a></li>
                 <li><a href="">Skill</a></li>
                 <li><a href="">Certified</a></li>
                 <li><a href="">Portofolio</a></li>
+                <li>
+                    <div class="menu-button">
+                        <a href="">Download CV</a>
+                    </div>
+                </li>
             </ul>
-            <i class="fa-regular fa-moon" id="icon"></i>
-            <i class="fas fa-bars icon" id="toggle"></i> <!-- Tambahkan ikon toggle -->
-            <div class="button">
-                <a href="">Download CV</a>
-            </div>
+
         </div>
     </div>
 
@@ -50,10 +53,10 @@
                 <div class="ellipse">
                     <p>Welcome</p>
                 </div>
-                <h1>I Have<span class="highlight">Software Developer</span>Experience</h1>
+                <h1>I Have<span class="highlight">Software</br>Developer</span>Experience</h1>
                 <p>I'm Azis, I have strong skills in Software Developer and aim to be a dedicated professional
                     developer. I've helped three businesses grow with my technology.</p>
-                <div class="button">
+                <div class="about-button">
                     <a class="primary" href="">Hire Me</a>
                     <a href="">View Portofolio <i class="fa-solid fa-arrow-right rotate-icon"></i></a>
                 </div>
@@ -68,7 +71,7 @@
 
     <!-- JavaScript -->
     <script>
-        var icon = document.getElementById("icon");
+        const icon = document.getElementById("icon");
 
         icon.onclick = function () {
             document.body.classList.toggle("dark-theme");
@@ -77,16 +80,17 @@
             } else {
                 icon.className = "fa-regular fa-moon";
             }
-        }
+        };
 
         // Ambil elemen toggle dan ul
-        const toggle = document.getElementById('toggle');
-        const ul = document.querySelector('.navbar ul');
+        const toggle = document.getElementById("navbar-toggle");
+        const menuList = document.getElementById("menu-list");
 
-        // Tambahkan event listener untuk toggle
-        toggle.addEventListener('click', function () {
-            ul.classList.toggle('active'); // Tambahkan atau hapus kelas active saat toggle di-klik
+        toggle.addEventListener("click", () => {
+            menuList.classList.toggle("hidden");
         });
+
+
     </script>
 </body>
 

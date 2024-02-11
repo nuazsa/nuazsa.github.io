@@ -15,12 +15,15 @@
 }
 
 * {
-    padding: 0px 10px 0px 10px;
+    padding: 0;
+    margin: 0;
 }
 
 body {
+    padding: 0px 30px;
     font-family: "Inter", sans-serif;
     background-color: var(--background);
+    /* background-color: yellow; */
 }
 
 p {
@@ -30,9 +33,9 @@ p {
 
 
 
-
 /* NAVBAR */
 #navbar {
+    padding: 20px 0px;
     /* background-color: hotpink; */
 }
 
@@ -60,19 +63,21 @@ p {
 #navbar ul li a {
     text-decoration: none;
     color: var(--paragraph);
+    padding: 10px;
 }
 
 #icon,
 .icon {
+    margin: 0px 5px;
     cursor: pointer;
     color: var(--paragraph);
 }
 
-#toggle {
+#navbar-toggle {
     display: none;
 }
 
-#navbar .button a {
+#navbar .menu-button a {
     padding: 10px 20px;
     border: 2px solid var(--primary);
     border-radius: 10px;
@@ -81,7 +86,9 @@ p {
     margin-left: 10px;
     white-space: nowrap;
 }
-
+.navbar {
+    border-bottom: 1px solid var(--paragraph);
+}
 
 
 
@@ -94,7 +101,6 @@ p {
 }
 
 #about .col {
-    margin: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -127,16 +133,20 @@ p {
     margin: 0;
 }
 
+#about .col span {
+    padding: 0 10px;
+}
+
 .highlight {
     color: var(--primary);
 }
 
 #about .col p {
-    padding: 0;
+    padding: 10px 0px;
 }
 
-#about .button {
-    padding-top: 20px;
+#about .about-button {
+   padding: 10px 0px;
 }
 
 #about .col .primary {
@@ -156,12 +166,12 @@ p {
 }
 
 #about .col a {
+    padding: 0 10px;
     text-decoration: none;
     color: var(--paragraph);
     font-size: 14px;
     display: inline-block;
     transition: transform 0.3s ease;
-
 }
 
 #about .col a:hover {
@@ -178,11 +188,8 @@ p {
 
 #about .col:nth-child(2) .row img {
     width: 100%;
-    /* Mengisi lebar dari elemen induk */
     height: 100%;
-    /* Mengisi tinggi dari elemen induk */
     object-fit: cover;
-    /* Memastikan gambar menutupi elemen sepenuhnya */
 }
 
 
@@ -190,9 +197,6 @@ p {
     transform: rotate(320deg);
     color: var(--paragraph);
 }
-
-
-
 
 
 /* Media queries */
@@ -221,12 +225,27 @@ p {
 }
 
 @media screen and (max-width: 768px) {
+    #navbar .col {
+        flex-wrap: wrap;
+    }
     #navbar ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #navbar ul.hidden {
         display: none;
     }
 
-    #navbar .button a {
-        padding: 5px 10px;
+    #navbar ul li {
+        margin: 5px 0;
+    }
+    #navbar ul li:first-of-type {
+        padding-top: 5px;
+    }
+
+    #navbar ul li:last-of-type {
+        padding-top: 5px;
     }
     
     .navbar ul.active {
@@ -238,12 +257,8 @@ p {
         margin-left: auto;
     }
 
-    #toggle {
+    #navbar-toggle {
         display: block;
-    }
-
-    .button {
-        display: none;
     }
 
     .ellipse {
@@ -255,7 +270,8 @@ p {
         font-size: 12px;
     }
 
-    p {
+    #about .col p {
+        padding: 5px 0px;
         font-size: 9px;
     }
 
@@ -272,7 +288,7 @@ p {
         padding: 5px 15px;
     }
 
-    #about .button a {
+    #about .about-button a {
         font-size: 12px;
     }
 }
