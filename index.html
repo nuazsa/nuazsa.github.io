@@ -21,19 +21,23 @@
 </head>
 
 <body>
+    <!-- NAVBAR -->
     <div class="navbar" id="navbar">
-        <h2>Nur Azis Saputra</h2>
-        <ul>
-            <li>Experience</li>
-            <li>Education</li>
-            <li>Skill</li>
-            <li>Certified</li>
-            <li>Portofolio</li>
-        </ul>
-        <a href="">Download CV</a>
+        <div class="col">
+            <h2>Nur Azis Saputra</h2>
+            <ul>
+                <li>Experience</li>
+                <li>Education</li>
+                <li>Skill</li>
+                <li>Certified</li>
+                <li>Portofolio</li>
+            </ul>
+            <i class="fa-regular fa-moon" id="icon"></i>
+            <a href="">Download CV</a>
+        </div>
     </div>
 
-    
+    <!-- ABOUT -->
     <div class="about" id="about">
         <div class="col">
             <div class="row">
@@ -44,7 +48,7 @@
                 <p>I'm Azis, I have strong skills in Software Developer and aim to be a dedicated professional developer. I've helped three businesses grow with my technology.</p>
                 <div class="button">
                     <a class="primary" href="">Hire Me</a>
-                    <a href="">View Portofolio <i class="fa-solid fa-arrow-right rotate-icon"></i></i></i></a>
+                    <a href="">View Portofolio <i class="fa-solid fa-arrow-right rotate-icon"></i></a>
                 </div>
             </div>
         </div>
@@ -54,6 +58,20 @@
             </div>
         </div>
     </div>
+
+    <!-- JavaScript -->
+    <script>
+        var icon = document.getElementById("icon");
+
+        icon.onclick = function () {
+            document.body.classList.toggle("dark-theme");
+            if (document.body.classList.contains("dark-theme")) {
+                icon.className = "fa-regular fa-sun";
+            } else {
+                icon.className = "fa-regular fa-moon";
+            }
+        }        
+    </script>
 </body>
 
 </html>

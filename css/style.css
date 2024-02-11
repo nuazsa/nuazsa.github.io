@@ -6,6 +6,14 @@
     --paragraph : #323433;
 }
 
+.dark-theme {
+    --background : #0B0C0C;
+    --primary : #626D8C;
+    --primary-hover : #4e566d; 
+    --secondary : #F0F0F6;
+    --paragraph : #adadad; 
+}
+
 * {
     padding: 0px 10px 0px 10px;
 }
@@ -26,13 +34,14 @@ p {
 /* NAVBAR */
 #navbar {
     height: 10vh;
-    margin-left: 15px;
-    margin-right: 49px;
-    display: flex;
+} 
+
+#navbar .col {
+    display: flex; 
     justify-content: space-between;
     align-items: center;
-    /* background-color: hotpink;    */
-} 
+    /* background-color: hotpink; */
+}
 
 #navbar h2 {
     color: var(--primary);
@@ -40,10 +49,17 @@ p {
 
 #navbar ul {
     display: flex;
+    text-align: right;
+    margin-left: auto; /* Menggeser ke kanan */
 }
 
 #navbar ul li {
     list-style: none;
+    color: var(--paragraph);
+}
+
+#icon {
+    cursor: pointer;
     color: var(--paragraph);
 }
 
@@ -53,7 +69,9 @@ p {
     border-radius: 10px;
     text-decoration: none;
     color: var(--paragraph);
+    margin-left: 10px;
 }
+
 
 
 
@@ -79,10 +97,7 @@ p {
 
 .about .col:nth-child(2) {
     flex: 10;
-}
-
-.about .col:nth-child(3) {
-    flex: 3;
+    justify-content: right;
 }
 
 .ellipse {
@@ -130,7 +145,15 @@ p {
     text-decoration: none;
     color:var(--paragraph);
     font-size: 14px;
+    display: inline-block;
+    transition: transform 0.3s ease; 
+
 }
+
+.about .col a:hover {
+    transform: scale(1.1); 
+}
+
 
 .about .col:nth-child(2) .row {
     width: 380px;
@@ -141,7 +164,7 @@ p {
 
 
 .rotate-icon {
-    transform: rotate(320deg); /* Memutar ikon 90 derajat */
+    transform: rotate(320deg);
     color: var(--paragraph );
 }
 
