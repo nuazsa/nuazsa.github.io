@@ -17,6 +17,7 @@
 * {
     padding: 0;
     margin: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -28,6 +29,10 @@ body {
 
 p {
     color: var(--paragraph);
+}
+
+h1 {
+    color: var(--secondary);
 }
 
 
@@ -86,8 +91,20 @@ p {
     margin-left: 10px;
     white-space: nowrap;
 }
+
 .navbar {
     border-bottom: 1px solid var(--paragraph);
+}
+
+.ellipse {
+    margin: 5px 0;
+    width: 90px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid var(--primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -116,20 +133,8 @@ p {
     justify-content: right;
 }
 
-.ellipse {
-    width: 90px;
-    height: 35px;
-    border-radius: 50%;
-    border: 1px solid var(--primary);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 #about .col h1 {
     font-size: 60px;
-    padding: 10px 0;
-    color: var(--secondary);
     margin: 0;
 }
 
@@ -146,7 +151,7 @@ p {
 }
 
 #about .about-button {
-   padding: 10px 0px;
+    padding: 10px 0px;
 }
 
 #about .col .primary {
@@ -160,12 +165,15 @@ p {
     background-color: var(--primary-hover);
 }
 
-#about .col a.primary {
+#about .col a.primary,
+#education .col a.primary
+ {
     text-decoration: none;
     color: #fff;
 }
 
-#about .col a {
+#about .col a,
+#education .col a {
     padding: 0 10px;
     text-decoration: none;
     color: var(--paragraph);
@@ -192,11 +200,83 @@ p {
     object-fit: cover;
 }
 
-
 .rotate-icon {
     transform: rotate(320deg);
     color: var(--paragraph);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* SECTION EDUCATION */
+#education {
+    margin: 30px 0;
+    display: flex;
+    /* background-color: green; */
+}
+
+#education .col:nth-child(1) {
+    flex: 1;
+}
+
+#education .col:nth-child(2) {
+    flex: 2;
+}
+
+#education p {
+    padding: 15px 0;
+}
+
+#education .col {
+    margin: 20px 0px;
+}
+
+#education .col .primary {
+    padding: 5px 15px;
+    background-color: var(--primary);
+    border-radius: 5px;
+    transition: padding 0.3s ease;
+}
+
+#education .col .primary:hover {
+    background-color: var(--primary-hover);
+}
+
+#education .col a {
+    padding: 0 10px;
+    text-decoration: none;
+    color: var(--paragraph);
+    font-size: 12px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* Media queries */
@@ -228,6 +308,7 @@ p {
     #navbar .container {
         flex-wrap: wrap;
     }
+
     #navbar ul {
         flex-direction: column;
         width: 100%;
@@ -240,6 +321,7 @@ p {
     #navbar ul li {
         margin: 5px 0;
     }
+
     #navbar ul li:first-of-type {
         padding-top: 5px;
     }
@@ -247,9 +329,10 @@ p {
     #navbar ul li:last-of-type {
         padding-top: 5px;
     }
-    
+
     .navbar ul.active {
-        display: block; /* Tampilkan menu saat memiliki kelas active */
+        display: block;
+        /* Tampilkan menu saat memiliki kelas active */
     }
 
     #icon {
@@ -274,7 +357,8 @@ p {
         padding: 5px 0px;
     }
 
-    #about .col h1 {
+    #about .col h1,
+    #education .col h1 {
         font-size: 25px;
     }
 
@@ -296,23 +380,28 @@ p {
     h2 {
         font-size: 14px;
     }
-    #about {
+
+    #about,
+    #education {
         height: auto;
         display: flex;
         flex-direction: column;
-        align-items: center;
     }
 
     #about .col:nth-child(2) {
         justify-content: center;
     }
+
     #about .col {
         padding: 20px 0;
     }
 
     #about .col:nth-child(1),
-    #about .col:nth-child(2)
-    {
+    #about .col:nth-child(2) {
         flex: 1;
+    }
+
+    #education .col:nth-child(2) {
+       align-items: left;
     }
 }
