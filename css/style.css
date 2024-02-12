@@ -39,7 +39,7 @@ p {
     /* background-color: hotpink; */
 }
 
-#navbar .col {
+#navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -225,7 +225,7 @@ p {
 }
 
 @media screen and (max-width: 768px) {
-    #navbar .col {
+    #navbar .container {
         flex-wrap: wrap;
     }
     #navbar ul {
@@ -272,11 +272,10 @@ p {
 
     #about .col p {
         padding: 5px 0px;
-        font-size: 9px;
     }
 
     #about .col h1 {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     #about .col:nth-child(2) .row {
