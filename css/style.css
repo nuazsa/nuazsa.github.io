@@ -214,8 +214,7 @@ h1 {
 
 /* SECTION EDUCATION */
 #education {
-    margin: 30px 0;
-    padding: 20px 0;
+    padding-bottom: 60px;
     display: flex;
     /* background-color: green; */
 }
@@ -258,8 +257,7 @@ h1 {
 
 /* SECTION SKILLS */
 #skills {
-    margin: 30px 0;
-    padding: 30px 0;
+    padding: 60px 0;
     /* background-color: blue; */
 }
 #skills .container {
@@ -270,19 +268,19 @@ h1 {
     text-align: center;
 }
 
-.row:nth-child(2) { 
+#skills .row:nth-child(2) { 
     /* background:linear-gradient(45deg, blueviolet, lightgreen); */
     padding:15px 9%;
     padding-bottom: 100px;
 }
 
-.row:nth-child(2) .box-container{ 
+#skills .row:nth-child(2) .box-container{ 
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
     gap:15px;    
 }
 
-.row:nth-child(2) .box-container .box{ 
+#skills .row:nth-child(2) .box-container .box{ 
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
     border-radius: 5px;
     background: var(--box-color);
@@ -290,11 +288,11 @@ h1 {
     padding:30px 20px;
 }
 
-.row:nth-child(1) p {
+#skills .row:nth-child(1) p {
     margin: 10px 0;
 }
 
-.row:nth-child(2) h4 {
+#skills .row:nth-child(2) h4 {
     color: var(--secondary-color);
 }
 
@@ -312,6 +310,11 @@ h1 {
     padding-bottom: 10px;
 }
 
+#skills .box:last-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 #skills .box a {
     text-decoration: none;
     color: var(--primary-color);
@@ -428,6 +431,10 @@ h1 {
         font-size: 14px;
     }
 
+    #education {
+        margin-top: 30px;
+    }
+    
     #about,
     #education {
         height: auto;
@@ -451,5 +458,14 @@ h1 {
 
     #education .col:nth-child(2) {
        align-items: left;
+    }
+
+    #education {
+        padding: 0;
+    }
+
+    #skills .row:nth-child(2) { 
+        /* background:linear-gradient(45deg, blueviolet, lightgreen); */
+        padding:15px 0;
     }
 }

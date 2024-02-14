@@ -263,7 +263,7 @@
 }
 
 .timeline--horizontal .timeline__item--bottom .timeline__content:before {
-    border-bottom: 12px solid;
+    border-bottom: 12px solid #ccc;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
     border-top: none;
