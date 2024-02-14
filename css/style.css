@@ -1,17 +1,19 @@
 :root {
-    --background: #F0F0F6;
-    --primary: #626D8C;
-    --primary-hover: #4e566d;
-    --secondary: #0B0C0C;
-    --paragraph: #323433;
+    --background-color: #F0F0F6;
+    --primary-color: #626D8C;
+    --primary-color-hover: #4e566d;
+    --secondary-color: #0B0C0C;
+    --paragraph-color: #323433;
+    --box-color: #FFFF;
 }
 
 .dark-theme {
-    --background: #0B0C0C;
-    --primary: #626D8C;
-    --primary-hover: #4e566d;
-    --secondary: #F0F0F6;
-    --paragraph: #adadad;
+    --background-color: #0B0C0C;
+    --primary-color: #626D8C;
+    --primary-color-hover: #4e566d;
+    --secondary-color: #F0F0F6;
+    --paragraph-color: #adadad;
+    --box-color: #3f3f3f;
 }
 
 * {
@@ -20,19 +22,23 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     padding: 0px 30px;
     font-family: "Inter", sans-serif;
-    background-color: var(--background);
+    background-color: var(--background-color);
     /* background-color: yellow; */
 }
 
 p {
-    color: var(--paragraph);
+    color: var(--paragraph-color);
 }
 
 h1 {
-    color: var(--secondary);
+    color: var(--secondary-color);
 }
 
 
@@ -51,7 +57,7 @@ h1 {
 }
 
 #navbar h2 {
-    color: var(--primary);
+    color: var(--primary-color);
 }
 
 #navbar ul {
@@ -67,7 +73,7 @@ h1 {
 
 #navbar ul li a {
     text-decoration: none;
-    color: var(--paragraph);
+    color: var(--paragraph-color);
     padding: 10px;
 }
 
@@ -75,7 +81,7 @@ h1 {
 .icon {
     margin: 0px 5px;
     cursor: pointer;
-    color: var(--paragraph);
+    color: var(--paragraph-color);
 }
 
 #navbar-toggle {
@@ -84,16 +90,16 @@ h1 {
 
 #navbar .menu-button a {
     padding: 10px 20px;
-    border: 2px solid var(--primary);
+    border: 2px solid var(--primary-color);
     border-radius: 10px;
     text-decoration: none;
-    color: var(--paragraph);
+    color: var(--paragraph-color);
     margin-left: 10px;
     white-space: nowrap;
 }
 
 .navbar {
-    border-bottom: 1px solid var(--paragraph);
+    border-bottom: 1px solid var(--paragraph-color);
 }
 
 .ellipse {
@@ -101,7 +107,7 @@ h1 {
     width: 90px;
     height: 35px;
     border-radius: 50%;
-    border: 1px solid var(--primary);
+    border: 1px solid var(--primary-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -143,7 +149,7 @@ h1 {
 }
 
 .highlight {
-    color: var(--primary);
+    color: var(--primary-color);
 }
 
 #about .col p {
@@ -156,27 +162,27 @@ h1 {
 
 #about .col .primary {
     padding: 10px 30px;
-    background-color: var(--primary);
+    background-color: var(--primary-color);
     border-radius: 5px;
     transition: padding 0.3s ease;
 }
 
 #about .col .primary:hover {
-    background-color: var(--primary-hover);
+    background-color: var(--primary-color-hover);
 }
 
 #about .col a.primary,
 #education .col a.primary
  {
     text-decoration: none;
-    color: #fff;
+    color: var(--box-color);
 }
 
 #about .col a,
 #education .col a {
     padding: 0 10px;
     text-decoration: none;
-    color: var(--paragraph);
+    color: var(--paragraph-color);
     font-size: 14px;
     display: inline-block;
     transition: transform 0.3s ease;
@@ -187,14 +193,14 @@ h1 {
 }
 
 
-#about .col:nth-child(2) .row {
+#about .col:nth-child(2) .picture {
     width: 380px;
     height: 380px;
     border-radius: 2000px 100px 0 0;
-    background-color: var(--primary);
+    background-color: var(--primary-color);
 }
 
-#about .col:nth-child(2) .row img {
+#about .col:nth-child(2) .picture img {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -202,28 +208,14 @@ h1 {
 
 .rotate-icon {
     transform: rotate(320deg);
-    color: var(--paragraph);
+    color: var(--paragraph-color);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* SECTION EDUCATION */
 #education {
     margin: 30px 0;
+    padding: 20px 0;
     display: flex;
     /* background-color: green; */
 }
@@ -240,25 +232,21 @@ h1 {
     padding: 15px 0;
 }
 
-#education .col {
-    margin: 20px 0px;
-}
-
 #education .col .primary {
     padding: 5px 15px;
-    background-color: var(--primary);
+    background-color: var(--primary-color);
     border-radius: 5px;
     transition: padding 0.3s ease;
 }
 
 #education .col .primary:hover {
-    background-color: var(--primary-hover);
+    background-color: var(--primary-color-hover);
 }
 
 #education .col a {
     padding: 0 10px;
     text-decoration: none;
-    color: var(--paragraph);
+    color: var(--paragraph-color);
     font-size: 12px;
     display: inline-block;
     transition: transform 0.3s ease;
@@ -268,13 +256,66 @@ h1 {
 
 
 
+/* SECTION SKILLS */
+#skills {
+    margin: 30px 0;
+    padding: 30px 0;
+    /* background-color: blue; */
+}
+#skills .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.row:nth-child(2) { 
+    /* background:linear-gradient(45deg, blueviolet, lightgreen); */
+    padding:15px 9%;
+    padding-bottom: 100px;
+}
+
+.row:nth-child(2) .box-container{ 
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    gap:15px;    
+}
+
+.row:nth-child(2) .box-container .box{ 
+    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+    border-radius: 5px;
+    background: var(--box-color);
+    text-align: center;
+    padding:30px 20px;
+}
+
+.row:nth-child(1) p {
+    margin: 10px 0;
+}
+
+.row:nth-child(2) h4 {
+    color: var(--secondary-color);
+}
 
 
+#skills .box i {
+    font-size: 70px;
+    color: var(--primary-color);
+}
 
+#skills .box h4 {
+    margin: 5px 0;
+}
+#skills .box p {
+    font-size: 12px;
+    padding-bottom: 10px;
+}
 
-
-
-
+#skills .box a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
 
 
 
@@ -298,7 +339,7 @@ h1 {
         font-size: 12px;
     }
 
-    #about .col:nth-child(2) .row {
+    #about .col:nth-child(2) .picture {
         width: 260px;
         height: 260px;
     }
@@ -362,7 +403,7 @@ h1 {
         font-size: 25px;
     }
 
-    #about .col:nth-child(2) .row {
+    #about .col:nth-child(2) .picture {
         width: 190px;
         height: 190px;
     }
@@ -374,6 +415,12 @@ h1 {
     #about .about-button a {
         font-size: 12px;
     }
+
+    #skills .box i {
+        font-size: 30px;
+        color: var(--primary-color);
+    }
+
 }
 
 @media screen and (max-width: 568px) {
@@ -392,7 +439,8 @@ h1 {
         justify-content: center;
     }
 
-    #about .col {
+    #about .col,
+    #education .col {
         padding: 20px 0;
     }
 

@@ -29,17 +29,17 @@
 
 <body>
     <!-- NAVBAR -->
-    <div class="navbar" id="navbar">
+    <section class="navbar" id="navbar">
         <div class="container">
             <h2>Nur Azis Saputra</h2>
             <i class="fa-regular fa-moon" id="icon"></i>
             <i class="fas fa-bars icon" id="navbar-toggle"></i> <!-- Tambahkan ikon toggle -->
             <ul id="menu-list" class="hidden">
-                <li><a href="">Experience</a></li>
-                <li><a href="">Education</a></li>
-                <li><a href="">Skill</a></li>
-                <li><a href="">Certified</a></li>
-                <li><a href="">Portofolio</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certified">Certified</a></li>
+                <li><a href="#portofolio">Portofolio</a></li>
                 <li>
                     <div class="menu-button">
                         <a href="">Download CV</a>
@@ -48,12 +48,12 @@
             </ul>
 
         </div>
-    </div>
+    </section>
 
     <!-- ABOUT -->
-    <div class="about" id="about">
+    <section class="about" id="about">
         <div class="col">
-            <div class="row">
+            <div class="container">
                 <div class="ellipse">
                     <p>Welcome</p>
                 </div>
@@ -67,21 +67,24 @@
             </div>
         </div>
         <div class="col">
-            <div class="row">
+            <div class="picture">
                 <img src="asset/image.png" alt="nurazissaputra">
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- EDUCATION -->
-    <div class="education" id="education">
+    <section class="education" id="education">
         <div class="col">
-            <div class="ellipse">
-                <p>Education</p>
+            <div class="container">
+                <div class="ellipse">
+                    <p>Education</p>
+                </div>
+                <h1>My Education</br>Latest <span class="highlight">Timeline</span></h1>
+                <p>Presented here is a summary of the history of my education.</p>
+                <a class="primary" href="">Show More</a>
             </div>
-            <h1>My Education</br>Latest <span class="highlight">Timeline</span></h1>
-            <p>Presented here is a summary of the history of my education.</p>
-            <a class="primary" href="">Show More</a>
+
         </div>
         <div class="col">
             <div class="timeline">
@@ -111,7 +114,54 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
+
+
+    <!-- Skill -->
+    <section class="skills" id="skills">
+        <div class="row">
+            <div class="container">
+                <div class="ellipse">
+                    <p>Skills</p>
+                </div>
+                <h1>Why Hire Me For Your <span class="highlight">Company?</span></h1>
+                <p>I’m specialist in Software Development. My passion is make & solving problems in code.</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="box-container">
+                <div class="box">
+                    <i class="fa-regular fa-eye"></i>
+                    <h4>Paradigm Programming</h4>
+                    <p>Procedural, Object Oriented</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-database"></i>
+                    <h4>Databases</h4>
+                    <p>MariaDB, MySQL, MongoDB</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-code"></i>
+                    <h4>Language</h4>
+                    <p>PHP, JAVA, JavaScript, Python</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-gears"></i>
+                    <h4>technology</h4>
+                    <p>Laravel</p>
+                </div>
+                <div class="box">
+                    <i class="fa-solid fa-computer"></i>
+                    <h4>Technique</h4>
+                    <p>Service-Repository Pattern, Rest API</p>
+                </div>
+                <div class="box">
+                    <p>I have acquired these skills through self-study and formal training, which have equipped me with a strong foundation in software development.</p>
+                    <a href="">See More</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
