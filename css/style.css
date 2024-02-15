@@ -27,7 +27,7 @@ html {
 }
 
 body {
-    padding: 0px 30px;
+    padding: 0px 50px;
     font-family: "Inter", sans-serif;
     background-color: var(--background-color);
     /* background-color: yellow; */
@@ -305,7 +305,8 @@ h1 {
 #skills .box h4 {
     margin: 5px 0;
 }
-#skills .box p {
+#skills .box p,
+#certified table p {
     font-size: 12px;
     padding-bottom: 10px;
 }
@@ -321,6 +322,65 @@ h1 {
 }
 
 
+
+/* CERTIFIED */
+#certified {
+    /* background-color: peru; */
+}
+
+#certified .container-certified {
+    display: flex;
+    margin: 30px;
+    border: 1px solid;
+}
+
+table {
+    background-color: var(--box-color);
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 10px;
+}
+
+td img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+td {
+    padding: 8px;
+    text-align: left;
+}
+
+td:nth-child(2) {
+    width: 400px;
+    text-align: center;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+.row {
+    margin: 20px 0;
+}
+
+h4 {
+    color: var(--secondary-color);
+    margin: 5px 0;
+}
+
+h5 {
+    color: var(--paragraph-color);
+}
 
 
 /* Media queries */
@@ -349,6 +409,10 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        padding: 0px 30px;
+    }
+
     #navbar .container {
         flex-wrap: wrap;
     }
@@ -423,6 +487,40 @@ h1 {
         font-size: 30px;
         color: var(--primary-color);
     }
+
+    #certified th {
+        display: none;
+    }
+
+    td:nth-child(2) {
+        width: 100%;
+    }
+
+    #certified td {
+        display: block;
+        text-align: center; /* Memastikan konten di tengah secara horizontal */
+        
+    }
+
+    #certified td:nth-child(1),
+    #certified td:nth-child(2) {
+        padding-bottom: 0;
+    }
+
+    #certified td:nth-child(3) {
+        padding-top: 0;
+        padding-bottom: 15px;
+    }
+
+    #certified table p {
+        display: none;
+    }
+
+    #certified table h5 {
+        font-size: 10px;
+    }
+
+    
 
 }
 
