@@ -324,12 +324,7 @@ h1 {
 
 /* CERTIFIED */
 #certified {    
-    padding: 60px 0;
     /* background-color: peru; */
-}
-
-#certified .container-certified {
-    margin: 30px;
 }
 
 table {
