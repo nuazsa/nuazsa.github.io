@@ -4,7 +4,7 @@
     --primary-color-hover: #4e566d;
     --secondary-color: #0B0C0C;
     --paragraph-color: #323433;
-    --box-color: #FFFF;
+    --box-color: #FFFF;;
 }
 
 .dark-theme {
@@ -222,11 +222,12 @@ h1 {
 }
 
 #education .col:nth-child(2),
-#education .col:nth-child(2) {
+#portofolio .col:nth-child(2) {
     flex: 2;
 }
 
-#education p {
+#education p,
+#portofolio p {
     padding: 15px 0;
 }
 
@@ -384,7 +385,53 @@ h5 {
 /* PORTOFOLIO */
 #portofolio {
     padding: 60px 0;
-    background-color: peru;
+    /* background-color: peru; */
+}
+
+#portofolio .col:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#portofolio .col:nth-child(2) .wrapper {
+    height: 100%;
+    margin: auto;
+    overflow: hidden;
+}
+
+#portofolio .col:nth-child(2) .images {
+    display: flex;
+    width: 100%;
+    transition: 2s;
+}
+
+#portofolio .col:nth-child(2) img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+#slide-1:target ~ .images {
+    margin-left: 0px;
+}
+
+#slide-2:target ~ .images {
+    margin-left: -100%;
+}
+
+.navigation a {
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    background-color: #dedede;
+    font-size: 0;
+    border-radius: 50%;
+    margin: 3px;
+    transition: 1s;
+}
+
+.navigation a:hover {
+    background-color: #666;
 }
 
 
@@ -528,6 +575,16 @@ h5 {
         font-size: 10px;
     }
 
+    #portofolio {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation a {
+        height: 10px;
+        width: 10px; 
+        margin: 0;
+    }
     
 
 }
