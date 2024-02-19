@@ -468,23 +468,9 @@ h5 {
     justify-content: center;
 }
 
-#contact .row .col span {
-    margin: 10px;
-    height: 2px;
-    width: 50%;
-    background-color: var(--secondary-color);
-}
-
 
 #contact iframe {
     width: 80%;
-    border-radius: 0 25% 0 25%;
-}
-
-#contact i {
-    color: var(--secondary-color);
-    font-size: 25px;
-    margin: 5px;
 }
 
 form {
@@ -529,6 +515,47 @@ input[type="submit"]:hover {
 
 input#name {
     font-family: "Inter", sans-serif;
+}
+
+#contact .col:last-child .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 30px;
+}
+
+#contact i {
+    color: var(--secondary-color);
+    font-size: 25px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+
+/* FOOTER */
+#footer {
+    margin-top: 30px;
+    padding: 10px;
+    border-top: 1px solid var(--paragraph-color);
+}
+
+#footer p {
+    color: var(--secondary-color);
+}
+
+#footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer .col:first-child {
+    display: flex;
+    align-items: center;
+}
+
+#footer .col:first-child i {
+    margin: 0 5px;
+    color: var(--secondary-color);
 }
 
 /* Media queries */
@@ -689,6 +716,17 @@ input#name {
         margin: 20px 0;
     }
 
+    #contact .row .col span {
+        margin: 5px;
+        height: 1px;
+    }
+    
+    #contact i {
+        font-size: 15px;
+        margin: 5px;
+    }
+
+
 }
 
 @media screen and (max-width: 568px) {
@@ -732,5 +770,19 @@ input#name {
     #skills .row:nth-child(2) { 
         /* background:linear-gradient(45deg, blueviolet, lightgreen); */
         padding:15px 0;
+    }
+
+    #contact iframe {
+        width: 90%;
+        height: 80%;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #footer p {
+        font-size: 10px;
     }
 }
