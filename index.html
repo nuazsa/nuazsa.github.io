@@ -8,12 +8,15 @@
         content="Jelajahi portofolio saya yang menampilkan berbagai proyek pengembangan perangkat lunak yang telah saya kerjakan. lihatlah contoh kerja saya dan kemampuan teknis saya dalam membangun solusi perangkat lunak yang inovatif dan efektif.">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
-    <link href="css/timeline.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/main.min.css">
-
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="assets/css/timeline.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/main.min.css">
+    <link rel="stylesheet" href="assets/css/zoom.css">
+    
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <!-- <link rel="stylesheet" href="assets/css/LineIcons.css"> -->
     <!-- JS -->
-    <script src="js/timeline.min.js"></script>
+    <script src="assets/js/timeline.min.js"></script>
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -26,9 +29,6 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Nur Azis Saputra</title>
-
-
-
 </head>
 
 <body>
@@ -71,7 +71,7 @@
         </div>
         <div class="col">
             <div class="picture">
-                <img src="asset/image.png" alt="nurazissaputra" loading="lazy">
+                <img src="assets/images/profile/image.png" data-action="zoom" alt="nurazissaputra" loading="lazy">
             </div>
         </div>
     </section>
@@ -150,13 +150,13 @@
                 </div>
                 <div class="box">
                     <i class="fa-solid fa-gears"></i>
-                    <h4>technology</h4>
+                    <h4>Technology</h4>
                     <p>Laravel</p>
                 </div>
                 <div class="box">
                     <i class="fa-solid fa-computer"></i>
                     <h4>Technique</h4>
-                    <p>Service-Repository Pattern, Rest API</p>
+                    <p>MVC, Service-Repository Pattern</p>
                 </div>
                 <div class="box">
                     <p>I have acquired these skills through self-study and formal training, which have equipped me with
@@ -175,40 +175,34 @@
                 <div class="ellipse">
                     <p>Certified</p>
                 </div>
-                <h1>Have <span class="highlight">Certified</span> Skills <br> To Support Expertise</h1>
+                <h1><span class="highlight">Certified</span> Skills <br> To Support Expertise</h1>
+                <p>Strengthen my skills in the field of software development</p>
             </div>
             <div class="row">
-                <table>
-                    <tr>
-                        <td><img loading="lazy" src="asset/certified/PCAP-Programming-Essentials-in-Python.jpg"></td>
-                        <td>
-                            <h4>Cisco Networking Academy</h4>
-                            <p>Issued :</p>
-                        </td>
-                        <td>
-                            <h5>PCAP - Programming Essentials In Python</h5>
-                            <p>The PCAP™ certification shows that the individual is familiar with the following
-                                concepts: modules, packages, and PIP, character encoding, strings and string processing,
-                                generators, iterators, closures, files, file streams, and file processing, exception
-                                hierarchies, and exception classes and objects, working with selected Standard Library
-                                modules, and the fundamentals of the Object-Oriented Programming (OOP) approach.</p>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img loading="lazy" src="asset/certified/PCAP-Programming-Essentials-in-Python.jpg"></td>
-                        <td>
-                            <h4>MikroTik</h4>
-                            <p>Issued :</p>
-                        </td>
-                        <td>
-                            <h5>MikroTik Certified Network Associate</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique impedit numquam
-                                incidunt libero ipsa odit laudantium dolore illum aperiam ad neque a consequuntur, minus
-                                adipisci in maxime iure commodi architecto tempore repellat sequi, cupiditate
-                                accusantium quae! Est cupiditate esse odio.</p>
-                        </td>
-                    </tr>
-                </table>
+                <div class="certificate">
+                    <div class="col">
+                        <img src="assets/images/logos/cisco.png" alt="">
+                    </div>
+                    <div class="col">
+                        <h4>PCAP - Programming Essentials in Python</h4>
+                        <p><i>Cisco Networking Academy</i></p>
+                        <p>Issued Jul 2023</p>
+                        <p><b>Skills:</b> Python (Programming Language) · Procedural Programming</p>
+                        <img src="assets/images/certified/PCAP-Programming-Essentials-in-Python.jpg" data-action="zoom" alt="">
+                    </div>
+                </div>
+                <div class="certificate">
+                    <div class="col">
+                        <img src="assets/images/logos/zahir.png" alt="">
+                    </div>
+                    <div class="col">
+                        <h4>Basis Data</h4>
+                        <p><i>PT Zahir Internasional</i></p>
+                        <p>Issued Feb 2024</p>
+                        <p><b>Skills:</b> SQL · Relational Databases · Normalization</p>
+                        <img src="assets/images/certified/Basis-Data.jpg" data-action="zoom" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -229,8 +223,8 @@
                     <span id="slide-1"></span>
                     <span id="slide-2"></span>
                     <div class="images">
-                        <img src="asset/portofolio/DesktopApp.png" alt="">
-                        <img src="asset/portofolio/tumnail.jpg" alt="">
+                        <img src="assets/images/portofolio/DesktopApp.png" alt="">
+                        <img src="assets/images/portofolio/tumnail.jpg" alt="">
                     </div>
                 </div>
                 <div class="navigation">
@@ -240,7 +234,6 @@
             </div>
         </div>
     </section>
-
 
     <!-- CONTACT -->
     <section class="contact" id="contact">
@@ -253,8 +246,8 @@
         </div>
         <div class="row">
             <div class="col">
-                  <!-- Tempelkan kode HTML yang sudah Anda salin di sini -->
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d991.3066158874844!2d106.77146692843522!3d-6.3647309995999155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjEnNTMuMCJTIDEwNsKwNDYnMTkuNiJF!5e0!3m2!1sid!2sid!4v1708256835036!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <!-- Tempelkan kode HTML yang sudah Anda salin di sini -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31721.714609169674!2d106.7590112539901!3d-6.366303091912545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eedc89b35199%3A0x93e55c5e239636b3!2sLimo%2C%20Depok%20City%2C%20West%20Java%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1709279562200!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
             <div class="col">        
                 <form action="https://formspree.io/f/xvoeavde" method="post">
@@ -267,6 +260,23 @@
                 </form>
             </div>
             <div class="col">
+                <div class="contact">
+                    <a href="https://maps.app.goo.gl/eJGETjaMnW72cMMC9">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Limo Raya Street <br> Limo, Limo <br> Depok, Indonesia</p>
+
+                    </a>
+                    <a href="http://+6289501475288">
+                        <i class="fa-solid fa-phone"></i>
+                        <p>0895-0147-5288</p>
+
+                    </a>
+                    <a href="http://mialto:nurazissaputra@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>  
+                        <p>nurazissaputra@gmail.com</p>
+
+                    </a>                  
+                </div>
                 <div class="container">
                     <div class="social-icon">
                         <a href="https://www.linkedin.com/in/nurazissaputra/"><i class="fa-brands fa-linkedin"></i></a>
@@ -296,34 +306,12 @@
         </div>
     </section>
 
+    
     <!-- JavaScript -->
-    <script>
-        const icon = document.getElementById("icon");
-
-        icon.onclick = function () {
-            document.body.classList.toggle("dark-theme");
-            if (document.body.classList.contains("dark-theme")) {
-                icon.className = "fa-regular fa-sun";
-            } else {
-                icon.className = "fa-regular fa-moon";
-            }
-        };
-
-        // Ambil elemen toggle dan ul
-        const toggle = document.getElementById("navbar-toggle");
-        const menuList = document.getElementById("menu-list");
-
-        toggle.addEventListener("click", () => {
-            menuList.classList.toggle("hidden");
-        });
-
-
-        timeline(document.querySelectorAll('.timeline'), {
-            mode: 'horizontal',
-            visibleItems: 4,
-            forceVerticalMode: 800
-        });
-    </script>
+    <script src="assets/js/main.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/zoom.js"></script>
 </body>
 
 </html>

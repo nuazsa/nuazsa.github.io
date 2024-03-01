@@ -8,12 +8,12 @@
 }
 
 .dark-theme {
-    --background-color: #0B0C0C;
+    --background-color: #191919;
     --primary-color: #626D8C;
     --primary-color-hover: #4e566d;
     --secondary-color: #F0F0F6;
     --paragraph-color: #adadad;
-    --box-color: #3f3f3f;
+    --box-color: #000000;
 }
 
 
