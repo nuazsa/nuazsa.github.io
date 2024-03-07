@@ -1,3 +1,12 @@
+:root {
+  --background-color: #F0F0F6;
+}
+
+.dark-theme {
+  --background-color: #191919;
+}
+
+
 img[data-action="zoom"] {
   cursor: pointer;
   cursor: -webkit-zoom-in;
@@ -18,7 +27,7 @@ img.zoom-img {
 }
 .zoom-overlay {
   z-index: 420;
-  background: #fff;
+  background: var(--background-color);
   position: fixed;
   top: 0;
   left: 0;
