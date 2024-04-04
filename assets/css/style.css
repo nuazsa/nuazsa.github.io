@@ -41,7 +41,11 @@ h1 {
     color: var(--secondary-color);
 }
 
-
+a[disabled] {
+    opacity: 0.5; /* Mengurangi opasitas tombol yang dinonaktifkan */
+    pointer-events: none; /* Mencegah interaksi pengguna dengan tombol */
+    text-decoration: none; /* Menghilangkan garis bawah pada tombol */
+}
 
 
 /* NAVBAR */
