@@ -27,10 +27,9 @@ html {
 }
 
 body {
-    padding: 0px 50px;
     font-family: "Inter", sans-serif;
     background-color: var(--background-color);
-    /* background-color: yellow; */
+    background-image: url('/assets/images/svg/bullet.svg');
 }
 
 p {
@@ -50,11 +49,14 @@ a[disabled] {
 
 /* NAVBAR */
 #navbar {
-    padding: 20px 0px;
-    /* background-color: hotpink; */
+    position: sticky;
+    top: 0;
+    background-color: var(--background-color); /* Adjust this to your desired color */
+    z-index: 1000; /* Ensure the navbar stays on top */
 }
 
 #navbar .container {
+    padding: 20px 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -104,6 +106,7 @@ a[disabled] {
 
 .navbar {
     border-bottom: 1px solid var(--paragraph-color);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Example values */
 }
 
 .ellipse {
@@ -122,6 +125,7 @@ a[disabled] {
 
 /* SECTION ABOUT */
 #about {
+    padding: 0px 50px;
     height: 100vh;
     display: flex;
     /* background-color: blue; */
@@ -215,7 +219,7 @@ a[disabled] {
 /* SECTION EDUCATION */
 #education,
 #portofolio {
-    padding-bottom: 60px;
+    padding: 60px 50px;
     display: flex;
     /* background-color: green; */
 }
@@ -262,6 +266,7 @@ a[disabled] {
 
 /* SECTION SKILLS */
 #skills {
+    padding: 0px 50px;
     padding: 60px 0;
     /* background-color: blue; */
 }
@@ -328,50 +333,68 @@ a[disabled] {
 
 
 /* CERTIFIED */
-#certified {    
-    /* background-color: peru; */
+#certified,
+#experienced {    
+    padding: 0px 50px;
 }
 
-#certified .row:nth-child(2) {
+#experienced .container-experienced .row:first-child{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#certified .row:nth-child(2),
+#experienced .row:nth-child(2){
     background-color: var(--box-color);
     border-radius: 10px;
 }
 
-#certified .certificate {
+#certified .certificate,
+#experienced .experience {
     display: flex;
     margin: 10px 0;
     width: 100%;
     border-bottom: 3px solid var(--background-color);
 }
 
-#certified h4 {
+#certified h4,
+#experienced h4 {
     color: var(--secondary-color);
 }
 
-#certified .certificate:last-child {
+#certified .certificate:last-child,
+#experienced .experience:last-child{
     border-bottom: none;
 }
 
-#certified .certificate .col:first-child {
+#certified .certificate .col:first-child,
+#experienced .experience .col:first-child {
     padding-left: 20px;
 }
 
-#certified .certificate .col {
+#certified .certificate .col,
+#experienced .experience .col {
     padding: 20px 5px;
     border-radius: 5px;
 }
 
-#certified .certificate .col:first-child img {
+#certified .certificate .col:first-child img,
+#experienced .experience .col:first-child img {
     height: 46px;
     width: 46px;
 }
 
-#certified .certificate p {
+#certified .certificate p,
+#experienced .experience p {
     padding: 0;
     margin: 9px 0;
 }
 
-#certified .certificate .col:last-child img {
+#certified .certificate .col:last-child img,
+#experienced .experience .col:last-child img {
     border: 2px solid var(--background-color);
     height: 86px;
     width: 146px;
@@ -380,8 +403,7 @@ a[disabled] {
 
 /* PORTOFOLIO */
 #portofolio {
-    padding: 60px 0;
-    /* background-color: peru; */
+    padding: 60px 50px;
 }
 
 #portofolio .col:nth-child(1) {
