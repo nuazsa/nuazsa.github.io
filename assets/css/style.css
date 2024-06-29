@@ -619,9 +619,6 @@ input#name {
 }
 
 @media screen and (max-width: 768px) {
-    body {
-        padding: 0px 30px;
-    }
 
     #navbar .container {
         flex-wrap: wrap;
@@ -669,6 +666,13 @@ input#name {
 
     .ellipse p {
         font-size: 12px;
+    }
+
+    #about,
+    #education,
+    #skills,
+    #contact {
+        padding: 0px 30px;
     }
 
     #about .col p {
@@ -800,12 +804,7 @@ input#name {
        align-items: left;
     }
 
-    #education {
-        padding: 0;
-    }
-
     #skills .row:nth-child(2) { 
-        /* background:linear-gradient(45deg, blueviolet, lightgreen); */
         padding:15px 0;
     }
 
