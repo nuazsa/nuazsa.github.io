@@ -2,392 +2,420 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/x-icon" href="assets/images/profile/image.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="assets/images/profile/image.png">
 
-    <meta name="description"
-        content="Jelajahi portofolio saya yang menampilkan berbagai proyek pengembangan perangkat lunak yang telah saya kerjakan. lihatlah contoh kerja saya dan kemampuan teknis saya dalam membangun solusi perangkat lunak yang inovatif dan efektif.">
+  <meta name="description"
+    content="Jelajahi portofolio saya yang menampilkan berbagai proyek pengembangan perangkat lunak yang telah saya kerjakan. lihatlah contoh kerja saya dan kemampuan teknis saya dalam membangun solusi perangkat lunak yang inovatif dan efektif.">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="assets/css/timeline.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="assets/css/zoom.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="assets/css/timeline.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/zoom.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <!-- JS -->
-    <script src="assets/js/timeline.min.js"></script>
+  <!-- JS -->
+  <script src="assets/js/timeline.min.js"></script>
 
-    <!-- FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
 
-    <!-- ICON -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- ICON -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Nur Azis Saputra</title>
+  <title>Nur Azis Saputra</title>
 </head>
 
 <body>
-    <!-- NAVBAR -->
-    <section class="navbar" id="navbar">
+  <!-- NAVBAR -->
+  <section class="navbar" id="navbar">
+    <div class="container">
+      <h2>Nur Azis Saputra</h2>
+      <i class="fa-regular fa-moon" id="icon"></i>
+      <i class="fas fa-bars icon" id="navbar-toggle"></i>
+      <ul id="menu-list" class="hidden">
+        <li><a href="#experienced">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certified">Certified</a></li>
+        <li><a href="#portofolio">Portofolio</a></li>
+        <li>
+          <div class="menu-button">
+            <a href="https://drive.google.com/file/d/12FazYN7u3hHG0JCMohHvYwRaYBLDjcnY/view?usp=sharing">Download
+              CV</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="col">
+      <div class="container">
+        <div class="ellipse">
+          <p>Welcome</p>
+        </div>
+        <h1>I Have<span class="highlight">Software</br>Developer</span>Experience</h1>
+        <p id="intro"></p>
+        <div class="about-button">
+          <a class="primary" href="#contact">Hire Me</a>
+          <a class="second" href="#portofolio">View Portofolio <i class="fa-solid fa-arrow-right rotate-icon"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="picture">
+        <img src="assets/images/profile/image.png" data-action="zoom" alt="nurazissaputra" loading="lazy">
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section class="experienced" id="experienced">
+    <div class="container-experienced">
+      <div class="row">
+        <div class="ellipse">
+          <p>Experience</p>
+        </div>
+        <h1>Valuable <span class="highlight">Experience</span></h1>
+        <p>Gained invaluable experience that enhanced my skills in software development</p>
+      </div>
+      <div class="row">
+        <div class="experience">
+          <div class="col">
+            <img src="assets/images/logos/m-knows.png" alt="m-knows">
+          </div>
+          <div class="col">
+            <h4>Backend Developer</h4>
+            <p><i>M-Knowns Consulting</i></p>
+            <p>Mar 2025 - Jul 2025</p>
+            <p><b>Skills:</b> Typescript · PostgreSQL</p>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="col">
+            <img src="assets/images/logos/m-knows.png" alt="m-knows">
+          </div>
+          <div class="col">
+            <h4>IT Researcher</h4>
+            <p><i>M-Knowns Consulting</i></p>
+            <p>Feb 2025 - Jul 2025</p>
+            <p><b>Skills:</b> Tech Researcher</p>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="col">
+            <img src="assets/images/logos/bangkit_academy.jpg" alt="bangkit">
+          </div>
+          <div class="col">
+            <h4>Mobile Developer Android Cohort</h4>
+            <p><i>Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</i></p>
+            <p>Aug 2024 - Dec 2024</p>
+            <p><b>Skills:</b> Kotlin Programming</p>
+          </div>
+        </div>
+
+        <div class="experience">
+          <div class="col">
+            <img src="assets/images/logos/ubsi.png" alt="ubsi">
+          </div>
+          <div class="col">
+            <h4>Software Developer Bootcamp</h4>
+            <p><i>University Bina Sarana Informatika</i></p>
+            <p>May 2024 - Jun 2024</p>
+            <p><b>Skills:</b> Team Leadership · Software Development</p>
+            <img src="assets/images/experience/ubsi_bootcamp.jpg" data-action="zoom" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="education" id="education">
+    <div class="col">
+      <div class="container">
+        <div class="ellipse">
+          <p>Education</p>
+        </div>
+        <h1>My Education</br>Latest <span class="highlight">Timeline</span></h1>
+        <p>Presented here is a summary of the history of my education.</p>
+        <a class="primary" href="">Show More</a>
+      </div>
+
+    </div>
+    <div class="col">
+      <div class="timeline">
+        <div class="timeline__wrap">
+          <div class="timeline__items">
+            <div class="timeline__item">
+              <div class="timeline__content">
+                2016: SDN Limo 1
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__content">
+                2019: SMPN 17 Depok
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__content">
+                2022: SMAN 6 Depok
+              </div>
+            </div>
+            <div class="timeline__item">
+              <div class="timeline__content">
+                Present: University BSI
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Skill -->
+  <section class="skills" id="skills">
+    <div class="row">
+      <div class="container">
+        <div class="ellipse">
+          <p>Skills</p>
+        </div>
+        <h1>Why Hire Me For Your <span class="highlight">Company?</span></h1>
+        <p>I’m specialist in Software Development. My passion is make & solving problems in code.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="box-container">
+        <div class="box">
+          <i class="fa-regular fa-eye"></i>
+          <h4>Paradigm Programming</h4>
+          <p>Procedural, Object-Oriented, Functional</p>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-database"></i>
+          <h4>Databases</h4>
+          <p>MySQL, PostgreSQL, MariaDB, MongoDB, Redis, SQLite</p>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-code"></i>
+          <h4>Languages</h4>
+          <p>HTML, CSS, JavaScript, TypeScript, PHP, Java, Python, Kotlin, YAML, Markdown</p>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-gears"></i>
+          <h4>Technologies</h4>
+          <p>Git, GitHub, Docker, Node.js, npm, Firebase, Cloudflare, Selenium, k6, Postman, Figma, VS Code,
+            Vercel, Netlify, PM2</p>
+        </div>
+
+        <div class="box">
+          <i class="fa-solid fa-computer"></i>
+          <h4>Techniques & Patterns</h4>
+          <p>MVC, Service-Repository, REST API, Testing, CI/CD</p>
+        </div>
+
+        <div class="box">
+          <p>I have acquired these skills through self-study, formal training, and practical implementation in
+            various projects.</p>
+          <a href="">See More</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CERTIFIED -->
+  <section class="certified" id="certified">
+    <div class="container-certified">
+      <div class="row">
+        <div class="ellipse">
+          <p>Certified</p>
+        </div>
+        <h1><span class="highlight">Certified</span> Skills <br> To Support Expertise</h1>
+        <p>Strengthen my skills in the field of software development</p>
+      </div>
+      <div class="row">
+        <div class="certificate">
+          <div class="col">
+            <img src="assets/images/logos/dicoding.jpg" alt="cisco">
+          </div>
+          <div class="col">
+            <h4>Belajar Dasar AI</h4>
+            <p><i>Dicoding Academy</i></p>
+            <p>Issued Okt 2024</p>
+            <img src="assets/images/certified/dasar_ai.png" data-action="zoom" alt="">
+          </div>
+        </div>
+        <div class="certificate">
+          <div class="col">
+            <img src="assets/images/logos/dicoding.jpg" alt="cisco">
+          </div>
+          <div class="col">
+            <h4>Pengenalan ke Logika Pemrograman (Programming Logic 101)</h4>
+            <p><i>Dicoding Academy</i></p>
+            <p>Issued Sep 2024</p>
+            <p><b>Skills:</b> Computational Thinking</p>
+            <img src="assets/images/certified/pengenalan_logika.png" data-action="zoom" alt="">
+          </div>
+        </div>
+        <div class="certificate">
+          <div class="col">
+            <img src="assets/images/logos/zahir.png" alt="zahir">
+          </div>
+          <div class="col">
+            <h4>Basis Data</h4>
+            <p><i>PT Zahir Internasional</i></p>
+            <p>Issued Feb 2024</p>
+            <p><b>Skills:</b> SQL · Relational Databases · Normalization</p>
+            <img src="assets/images/certified/Basis-Data.jpg" data-action="zoom" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- PORTOFOLIO -->
+  <section class="portofolio" id="portofolio">
+    <div class="col">
+      <div class="ellipse">
+        <p>Portofolio</p>
+      </div>
+      <h1>My Creative Works <br> Latest <span class="highlight">Projects</span></h1>
+      <p>I have selected and mentioned here some of my latest projects to share with you.</p>
+    </div>
+    <div class="col">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="info">
+              <a href="https://github.com/nuazsa/qr-attendance"><i class="fa-solid fa-book"></i>Show
+                More</a>
+            </div>
+            <img src="assets/images/portofolio/qr-attend.jpg" />
+          </div>
+          <div class="swiper-slide">
+            <div class="info">
+              <a href="https://github.com/nuazsa/javajunction"><i class="fa-solid fa-book"></i>Show
+                More</a>
+            </div>
+            <img src="assets/images/portofolio/JavaJunction.png" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="row">
+      <div class="ellipse">
+        <p>Contact</p>
+      </div>
+      <h1>Let's <span class="highlight">Discuss</span> With Me</h1>
+      <p>Let's make something new, different and more meaningful or make thing more conceptual</p>
+    </div>
+    <div class="row">
+      <div class="col">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31721.714609169674!2d106.7590112539901!3d-6.366303091912545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eedc89b35199%3A0x93e55c5e239636b3!2sLimo%2C%20Depok%20City%2C%20West%20Java%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1709279562200!5m2!1sen!2sus"
+          width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      <div class="col">
+        <form action="https://formspree.io/f/xvoeavde" method="post">
+          <input type="text" id="name" name="name" placeholder="Full Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <input type="tel" id="whatsapp" name="whatsapp" placeholder="WhatsApp Number">
+          <textarea id="message" name="message" placeholder="Message" required></textarea>
+
+          <input type="submit" value="Send Message">
+        </form>
+      </div>
+      <div class="col">
+        <div class="contact">
+          <div class="link">
+            <a href="https://maps.app.goo.gl/dW6YJF43Cv9Ppasr5">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>Limo, Depok</p>
+            </a>
+          </div>
+          <div class="link">
+            <a href="tel:+6289501475288">
+              <i class="fa-solid fa-phone"></i>
+              <p>0895-0147-5288</p>
+            </a>
+          </div>
+          <div class="link">
+            <a href="http://mialto:nurazissaputra@gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+              <p>nurazissaputra@gmail.com</p>
+
+            </a>
+          </div>
+        </div>
         <div class="container">
-            <h2>Nur Azis Saputra</h2>
-            <i class="fa-regular fa-moon" id="icon"></i>
-            <i class="fas fa-bars icon" id="navbar-toggle"></i>
-            <ul id="menu-list" class="hidden">
-                <li><a href="#experienced">Experience</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#certified">Certified</a></li>
-                <li><a href="#portofolio">Portofolio</a></li>
-                <li>
-                    <div class="menu-button">
-                        <a href="https://drive.google.com/file/d/1r8ivu1VZDGpFsBnrQyd0GLvko2j8wLFk/view?usp=sharing">Download CV</a>
-                    </div>
-                </li>
-            </ul>
+          <div class="social-icon">
+            <div class="circle">
+              <a href="https://www.linkedin.com/in/nurazissaputra/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+            <div class="circle">
+              <a href="https://github.com/nuazsa"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <div class="circle">
+              <a href="https://t.me/nurazissaputra"><i class="fa-brands fa-telegram"></i></a>
+            </div>
+            <div class="circle">
+              <a href="https://www.instagram.com/nurazissaputra/"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+            <div class="circle">
+              <a href="https://api.whatsapp.com/send/?phone=%2B6282211551415&text&type=phone_number&app_absent=0"><i
+                  class="fa-brands fa-square-whatsapp"></i></a>
+            </div>
+          </div>
         </div>
-    </section>
-
-    <!-- ABOUT -->
-    <section class="about" id="about">
-        <div class="col">
-            <div class="container">
-                <div class="ellipse">
-                    <p>Welcome</p>
-                </div>
-                <h1>I Have<span class="highlight">Software</br>Developer</span>Experience</h1>
-                <p>I'm Azis, a 21-year-old Full-stack developer & Backend Engineer. currently pursuing a major in
-                    Informatics Engineering at the University of Bina Sarana Informatika. With a passion for creating
-                    and improving code, I focus on software development.</p>
-                <div class="about-button">
-                    <a class="primary" href="#contact">Hire Me</a>
-                    <a class="second" href="#portofolio">View Portofolio <i
-                            class="fa-solid fa-arrow-right rotate-icon"></i></a>
-                </div>
-            </div>
-        </div>
-        <div class="col">
-            <div class="picture">
-                <img src="assets/images/profile/image.png" data-action="zoom" alt="nurazissaputra" loading="lazy">
-            </div>
-        </div>
-    </section>
-
-    <!-- Experience -->
-    <section class="experienced" id="experienced">
-        <div class="container-experienced">
-            <div class="row">
-                <div class="ellipse">
-                    <p>Experience</p>
-                </div>
-                <h1>Valuable <span class="highlight">Experience</span></h1>
-                <p>Gained invaluable experience that enhanced my skills in software development</p>
-            </div>
-            <div class="row">
-                <div class="experience">
-                    <div class="col">
-                        <img src="assets/images/logos/bangkit_academy.jpg" alt="ubsi">
-                    </div>
-                    <div class="col">
-                        <h4>Mobile Developer Android Cohort</h4>
-                        <p><i>Bangkit Academy led by Google, Tokopedia, Gojek, & Traveloka</i></p>
-                        <p>Aug 2024 - Dec 2024</p>
-                        <p><b>Skills:</b> Kotlin Programming</p>
-                    </div>
-                </div>
-                
-                <div class="experience">
-                    <div class="col">
-                        <img src="assets/images/logos/ubsi.png" alt="ubsi">
-                    </div>
-                    <div class="col">
-                        <h4>Software Developer Bootcamp</h4>
-                        <p><i>University Bina Sarana Informatika</i></p>
-                        <p>May 2024 - Jun 2024</p>
-                        <p><b>Skills:</b> Team Leadership · Software Development</p>
-                        <img src="assets/images/experience/ubsi_bootcamp.jpg" data-action="zoom"
-                            alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section class="education" id="education">
-        <div class="col">
-            <div class="container">
-                <div class="ellipse">
-                    <p>Education</p>
-                </div>
-                <h1>My Education</br>Latest <span class="highlight">Timeline</span></h1>
-                <p>Presented here is a summary of the history of my education.</p>
-                <a class="primary" href="">Show More</a>
-            </div>
-
-        </div>
-        <div class="col">
-            <div class="timeline">
-                <div class="timeline__wrap">
-                    <div class="timeline__items">
-                        <div class="timeline__item">
-                            <div class="timeline__content">
-                                2016: SDN Limo 1
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content">
-                                2019: SMPN 17 Depok
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content">
-                                2022: SMAN 6 Depok
-                            </div>
-                        </div>
-                        <div class="timeline__item">
-                            <div class="timeline__content">
-                                Present: University BSI
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
 
-    <!-- Skill -->
-    <section class="skills" id="skills">
-        <div class="row">
-            <div class="container">
-                <div class="ellipse">
-                    <p>Skills</p>
-                </div>
-                <h1>Why Hire Me For Your <span class="highlight">Company?</span></h1>
-                <p>I’m specialist in Software Development. My passion is make & solving problems in code.</p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="box-container">
-                <div class="box">
-                    <i class="fa-regular fa-eye"></i>
-                    <h4>Paradigm Programming</h4>
-                    <p>Procedural, Object Oriented</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-database"></i>
-                    <h4>Databases</h4>
-                    <p>MariaDB, MySQL, MongoDB, PosgreSQL</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-code"></i>
-                    <h4>Language</h4>
-                    <p>JavaScript, PHP</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-gears"></i>
-                    <h4>Technology</h4>
-                    <p>Git, NodeJS, Docker</p>
-                </div>
-                <div class="box">
-                    <i class="fa-solid fa-computer"></i>
-                    <h4>Technique</h4>
-                    <p>MVC, Service-Repository Pattern</p>
-                </div>
-                <div class="box">
-                    <p>I have acquired these skills through self-study and formal training.</p>
-                    <a href="">See More</a>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- FOOTER -->
+  <section class="footer" id="footer">
+    <div class="col">
+      <p>Build With :</p>
+      <i class="fa-brands fa-html5"></i>
+      <i class="fa-brands fa-css3-alt"></i>
+      <i class="fa-brands fa-js"></i>
+      <i class="fa-brands fa-figma"></i>
+      <i class="fa-solid fa-font-awesome"></i>
+    </div>
+    <div class="col">
+      <p id="footer"></p>
+    </div>
+  </section>
 
 
-    <!-- CERTIFIED -->
-    <section class="certified" id="certified">
-        <div class="container-certified">
-            <div class="row">
-                <div class="ellipse">
-                    <p>Certified</p>
-                </div>
-                <h1><span class="highlight">Certified</span> Skills <br> To Support Expertise</h1>
-                <p>Strengthen my skills in the field of software development</p>
-            </div>
-            <div class="row">
-                <div class="certificate">
-                    <div class="col">
-                        <img src="assets/images/logos/dicoding.jpg" alt="cisco">
-                    </div>
-                    <div class="col">
-                        <h4>Belajar Dasar AI</h4>
-                        <p><i>Dicoding Academy</i></p>
-                        <p>Issued Okt 2024</p>
-                        <img src="assets/images/certified/dasar_ai.png" data-action="zoom" alt="">
-                    </div>
-                </div>
-                <div class="certificate">
-                    <div class="col">
-                        <img src="assets/images/logos/dicoding.jpg" alt="cisco">
-                    </div>
-                    <div class="col">
-                        <h4>Pengenalan ke Logika Pemrograman (Programming Logic 101)</h4>
-                        <p><i>Dicoding Academy</i></p>
-                        <p>Issued Sep 2024</p>
-                        <p><b>Skills:</b> Computational Thinking</p>
-                        <img src="assets/images/certified/pengenalan_logika.png" data-action="zoom" alt="">
-                    </div>
-                </div>
-                <div class="certificate">
-                    <div class="col">
-                        <img src="assets/images/logos/zahir.png" alt="zahir">
-                    </div>
-                    <div class="col">
-                        <h4>Basis Data</h4>
-                        <p><i>PT Zahir Internasional</i></p>
-                        <p>Issued Feb 2024</p>
-                        <p><b>Skills:</b> SQL · Relational Databases · Normalization</p>
-                        <img src="assets/images/certified/Basis-Data.jpg" data-action="zoom" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- PORTOFOLIO -->
-    <section class="portofolio" id="portofolio">
-        <div class="col">
-            <div class="ellipse">
-                <p>Portofolio</p>
-            </div>
-            <h1>My Creative Works <br> Latest <span class="highlight">Projects</span></h1>
-            <p>I have selected and mentioned here some of my latest projects to share with you.</p>
-        </div>
-        <div class="col">
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <div class="info">
-                            <a href="https://github.com/nuazsa/qr-attendance"><i class="fa-solid fa-book"></i>Show More</a>
-                        </div>
-                        <img src="assets/images/portofolio/qr-attend.jpg" />
-                    </div>
-                    <div class="swiper-slide">
-                        <div class="info">
-                            <a href="https://github.com/nuazsa/javajunction"><i class="fa-solid fa-book"></i>Show More</a>
-                        </div>
-                        <img src="assets/images/portofolio/JavaJunction.png" />
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section class="contact" id="contact">
-        <div class="row">
-            <div class="ellipse">
-                <p>Contact</p>
-            </div>
-            <h1>Let's <span class="highlight">Discuss</span> With Me</h1>
-            <p>Let's make something new, different and more meaningful or make thing more conceptual</p>
-        </div>
-        <div class="row">
-            <div class="col">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31721.714609169674!2d106.7590112539901!3d-6.366303091912545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69eedc89b35199%3A0x93e55c5e239636b3!2sLimo%2C%20Depok%20City%2C%20West%20Java%2C%20Indonesia!5e0!3m2!1sen!2sus!4v1709279562200!5m2!1sen!2sus"
-                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                    referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <div class="col">
-                <form action="https://formspree.io/f/xvoeavde" method="post">
-                    <input type="text" id="name" name="name" placeholder="Full Name" required>
-                    <input type="email" id="email" name="email" placeholder="Your Email" required>
-                    <input type="tel" id="whatsapp" name="whatsapp" placeholder="WhatsApp Number">
-                    <textarea id="message" name="message" placeholder="Message" required></textarea>
-
-                    <input type="submit" value="Send Message">
-                </form>
-            </div>
-            <div class="col">
-                <div class="contact">
-                    <div class="link">
-                        <a href="https://maps.app.goo.gl/dW6YJF43Cv9Ppasr5">
-                            <i class="fa-solid fa-location-dot"></i>
-                            <p>Limo, Depok</p>
-                        </a>
-                    </div>
-                    <div class="link">
-                        <a href="tel:+6289501475288">
-                            <i class="fa-solid fa-phone"></i>
-                            <p>0895-0147-5288</p>
-                        </a>
-                    </div>
-                    <div class="link">
-                        <a href="http://mialto:nurazissaputra@gmail.com">
-                            <i class="fa-solid fa-envelope"></i>
-                            <p>nurazissaputra@gmail.com</p>
-
-                        </a>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="social-icon">
-                        <div class="circle">
-                            <a href="https://www.linkedin.com/in/nurazissaputra/"><i
-                                    class="fa-brands fa-linkedin"></i></a>
-                        </div>
-                        <div class="circle">
-                            <a href="https://github.com/nuazsa"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                        <div class="circle">
-                            <a href="https://t.me/nurazissaputra"><i class="fa-brands fa-telegram"></i></a>
-                        </div>
-                        <div class="circle">
-                            <a href="https://www.instagram.com/nurazissaputra/"><i
-                                    class="fa-brands fa-square-instagram"></i></a>
-                        </div>
-                        <div class="circle">
-                            <a
-                                href="https://api.whatsapp.com/send/?phone=%2B6282211551415&text&type=phone_number&app_absent=0"><i
-                                    class="fa-brands fa-square-whatsapp"></i></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- FOOTER -->
-    <section class="footer" id="footer">
-        <div class="col">
-            <p>Build With :</p>
-            <i class="fa-brands fa-html5"></i>
-            <i class="fa-brands fa-css3-alt"></i>
-            <i class="fa-brands fa-js"></i>
-            <i class="fa-brands fa-figma"></i>
-            <i class="fa-solid fa-font-awesome"></i>
-        </div>
-        <div class="col">
-            <p>© 2025 Nur Azis Saputra. All Rights Reserved.</p>
-        </div>
-    </section>
-
-
-    <!-- Script -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-    <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-    <script src="assets/js/zoom.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    <script src="assets/js/main.js"></script>
+  <!-- Script -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="assets/js/zoom.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
 
 </body>
 

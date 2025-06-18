@@ -396,7 +396,7 @@ a[disabled] {
 #certified .certificate .col:last-child img,
 #experienced .experience .col:last-child img {
     border: 2px solid var(--background-color);
-    height: 86px;
+    height: 100px;
     width: 146px;
 }
 
@@ -570,7 +570,7 @@ input#name {
 /* FOOTER */
 #footer {
     margin-top: 30px;
-    padding: 10px;
+    padding: 10px 50px;
     border-top: 1px solid var(--paragraph-color);
 }
 
@@ -669,8 +669,10 @@ input#name {
     }
 
     #about,
+    #experienced,
     #education,
     #skills,
+    #certified,
     #contact {
         padding: 0px 30px;
     }
